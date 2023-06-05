@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bindgen-init"
+version = "0.0.1"
+authors = [
+  { name="Chia-Hsiang Cheng", email="gary.chiahsiang.cheng@gmail.com" },
+]
+description = "Automatically set up a Cargo project with bindgen installed."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+bindgeninit = "bindgeninit:main"
+
+[project.urls]
+"Homepage" = "https://github.com/garychia/bindgen-init"
+"Bug Tracker" = "https://github.com/garychia/bindgen-init/issues"
